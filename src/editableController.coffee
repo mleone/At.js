@@ -40,7 +40,7 @@ class EditableController extends Controller
     if e.which == KEY_CODE.CTRL
       @ctrl_pressed = true
     else if e.which == KEY_CODE.A
-      if !@ctrl_pressed?
+      if @ctrl_pressed?
         @ctrl_a_pressed = true
     else
       delete @ctrl_a_pressed

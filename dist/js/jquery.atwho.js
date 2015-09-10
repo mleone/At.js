@@ -598,7 +598,7 @@ EditableController = (function(superClass) {
     if (e.which === KEY_CODE.CTRL) {
       this.ctrl_pressed = true;
     } else if (e.which === KEY_CODE.A) {
-      if (this.ctrl_pressed == null) {
+      if (this.ctrl_pressed != null) {
         this.ctrl_a_pressed = true;
       }
     } else {
